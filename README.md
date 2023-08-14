@@ -29,19 +29,6 @@ OvaryTreatment_AnginPKM2VEGF/
 │   │   │       ⋮
 │   │   └── 20_11.bmp
 │   │
-│   ├── invalid-PKM2_2/
-│   │   ├── 39_2.bmp
-│   │   ├── 39_3.bmp
-│   │   ├── 39_4.bmp
-│   │   │       ⋮
-│   │   └── 48_11.bmp
-│   │
-│   ├── effective-PKM2_9/
-│   │   ├── 91_2.bmp
-│   │   ├── 91_3.bmp
-│   │   ├── 91_4.bmp
-│   │   │       ⋮
-│   │   └── 101_12.bmp
 │   │
 │   └── effective-PKM2_21/
 │       ├── 91_13.bmp
@@ -49,19 +36,6 @@ OvaryTreatment_AnginPKM2VEGF/
 │       ├── 91_15.bmp
 │       │       ⋮
 │       └── 100_22.bmp
-│
-├── Detection_ROI/ - detect the tissue core 
-│   ├── input_img/ - put the SVS file
-│   │   └── effective-PKM2.svs/
-│   │       ├── setting.json - configuration file
-│   │       └── effective-PKM2.svs
-│   ├── model/ - model of the detector
-│   │   └── _iter_100.caffemodel
-│   ├── ClassId.txt
-│   ├── caffe_root.txt - set the caffe root
-│   ├── deploy_roi.prototxt
-│   ├── detected2.json - configuration file
-│   └── Main_Detection_ROI - execution file
 │
 ├── BB_Segmentation - extract the tumor tissue
 │   ├── AfterSeg_BB_tileout/ - storage location of tumor patches
