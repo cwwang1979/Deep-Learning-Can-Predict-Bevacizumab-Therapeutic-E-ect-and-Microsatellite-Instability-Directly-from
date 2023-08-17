@@ -68,15 +68,30 @@ TCGA_WSI_Ovary_Inv3/
 ## Steps
 
 #### 1. Data preparing
-Put the Whole slide image in the Data/WSI_Image.
+Place the Whole slide image in Data/WSI_Image/.
 
 Then in a terminal run:
 ```
 ./TileScale
 ```
 
-After running in a terminal, the result will be produced in one folders named "BB_tileout", like above data struct.
-
+After running in a terminal, the result will be produced in folder named "BB_tileout", like the following structure.
+```
+BB_tileout/
+├── TCGA-04-1335-01A-01-BS1.svs/
+│   ├── 10_2.bmp
+│   ├── 10_3.bmp
+│   ├── 10_4.bmp
+│   │       ⋮
+│   └── 20_11.bmp
+│   
+└── TCGA-04-1342-01A-01-BS1.svs/
+    ├──30_3.bmp
+    ├──32_1.bmp
+    ├──33_4.bmp
+    │       ⋮
+    └── 56_11.bmp     
+```
 
 #### 2. List process
 make two list 'train.txt' and 'test.txt' file under the folder 'List/'
