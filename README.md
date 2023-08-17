@@ -24,7 +24,7 @@ OvaryTreatment_AnginPKM2VEGF/
 ├── Data/ - training and testing data location
 │   ├── BB_tileout/
 │   │   ├── TCGA-04-1335-01A-01-BS1.svs/
-│   │   │   ├──10_2.bmp
+│   │   │   ├── 10_2.bmp
 │   │   │   ├── 10_3.bmp
 │   │   │   ├── 10_4.bmp
 │   │   │   │       ⋮
