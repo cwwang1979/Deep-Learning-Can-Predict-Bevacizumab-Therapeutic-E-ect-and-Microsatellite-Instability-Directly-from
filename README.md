@@ -42,24 +42,24 @@ TCGA_WSI_Ovary_Inv3/
 │       └── TCGA-61-1730-11A-01-TS1.svs
 │
 │
-├── List_Preprocessing/
-│   └── Main_List_Preprocessing - execution file
-│
 ├── List/ - demo list
 │   ├── train.txt
 │   └── test.txt
 │
-├── Trainining/
-│   ├── Model - storage location of training models
+├── Training/
 │   ├── solver.py - execution file
-│   ├── solver.prototxt - configuration file
-│   ├── train.prototxt
+│   ├── Model_selection.py
 │   ├── voc_layers.py
-│   └── voc_layers.pyc
+│   ├── voc_layers.pyc
+│   ├── Model/ - storage location of training models
+│   └── network/
+│       ├── solver.prototxt - configuration file
+│       ├── train_weight.prototxt
+│       └── deploy.prototxt
 │
-└── Testing/ 
-    ├── model - demo model
-    │   └── PKM2_proposed.caffemodel
+└── Inference/ 
+    ├── Model/ - demo model
+    │   └── Ovary_TCGA_MSI50%_weight_iter_1050000.caffemodel
     ├── deploy.prototxt
     └── inference_TMA.py - execution file
 
