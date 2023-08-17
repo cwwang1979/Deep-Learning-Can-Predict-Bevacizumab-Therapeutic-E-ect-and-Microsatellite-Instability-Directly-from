@@ -1,4 +1,4 @@
-# Test
+# Ovary MSI High classification.
 
 ## Associated Publications
 - Wang et al. (2023) Interpretable attention-based deep learning ensemble for personalized ovarian cancer treatment without manual annotations, Computerized Medical Imaging and Graphics, https://doi.org/10.1016/j.compmedimag.2023.102233 (IF=7.422, 14/136 RADIOLOGY, NUCLEAR MEDICINE & MEDICAL IMAGING)
