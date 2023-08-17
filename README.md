@@ -93,6 +93,7 @@ BB_tileout/
     └── 56_11.bmp     
 ```
 
+
 #### 2. List process
 make two text files 'train.txt' and 'test.txt' file in the folder '/List/'.
 
@@ -116,7 +117,6 @@ test.txt
 
 ```
 
-After dividing training set and testing set
 
 #### 3. Trainining
 Open the "solver.py" and "voc_layers.py" files to set up the storage location of training models and the location of training list("train.txt") to use.
@@ -125,6 +125,7 @@ Then in a terminal run:
 ```
 python solver.py
 ```
+
 
 #### 4. Patch Selection training part
 After done the training part use the 'Patch_selection' to choose the Model selection inference patch
@@ -135,6 +136,7 @@ Then in a terminal run:
 ```
 After running in a terminal, the .txt results will be produced under the folder '/List' and the filename will be PatchSelection_train.txt 
 
+
 #### 5. Model Selection
 Open the Model_selection.py file to set up the storage location of training models and the location of training list("PatchSelection_train.txt") to use.
 
@@ -143,6 +145,7 @@ Then in a terminal run:
 python Model_selection.py
 ```
 After running in a terminal, the result will be display on the terminal window, record the model name and Copy it to the folder 'inference/Model'
+
 
 #### 6. Patch Selection testing part
 After done the training part use the 'Patch_selection' to choose the inference patch
@@ -153,6 +156,7 @@ Then in a terminal run:
 ```
 After running in a terminal, the .txt results will be produced under the folder '/List' and the filename will be PatchSelection_test.txt 
 
+
 #### 7. Testing
 Open the "inference.py" file to set up the storage location of training models and the location of testing list("PatchSelection_test.txt") to use.
 
@@ -160,6 +164,7 @@ Then in a terminal run:
 ```
 python inference.py
 ```
+
 
 ## License
 This extension to the Caffe library is released under a creative commons license, which allows for personal and research use only. For a commercial license please contact Prof Ching-Wei Wang. You can view a license summary here:  
