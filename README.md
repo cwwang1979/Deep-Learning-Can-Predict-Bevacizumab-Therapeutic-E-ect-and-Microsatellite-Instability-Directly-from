@@ -75,11 +75,7 @@ Then in a terminal run:
 python TileScale.py
 ```
 
-Then in a terminal run:
-```
-./Main_Detection_ROI
-```
-After running in a terminal, the result will be produced in two folders named "result" and "result_anno"
+After running in a terminal, the result will be produced in two folders named "BB_tileout"
 
 
 #### 2. BB_Segmentation
