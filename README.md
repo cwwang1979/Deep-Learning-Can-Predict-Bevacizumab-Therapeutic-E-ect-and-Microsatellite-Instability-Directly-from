@@ -10,9 +10,9 @@
 - ubuntu 18.04
 - RAM >= 128 GB
 - GPU Memory >= 24 GB
-- GPU driver version >= 418.56
+- GPU driver version >= 418.152
 - CUDA version >= 10.1
-- cuDNN version >= 7.6.4
+- cuDNN version >= 7.5.1
 
 #### Download
 Execution file, configuration file, and models are download from the [zip](https://drive.google.com/file/d/1MqGr6y_EgdS5CscmfWFmABvFkE1UCwe6/view?usp=share_link) file.  (For reviewers, "..._cwlab" is the password to decompress the file.)
