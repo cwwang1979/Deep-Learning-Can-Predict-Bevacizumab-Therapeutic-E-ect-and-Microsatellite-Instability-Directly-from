@@ -94,8 +94,9 @@ BB_tileout/
 ```
 
 #### 2. List process
-make two list 'train.txt' and 'test.txt' file under the folder 'List/'
-The .txt file should be like
+make two text files 'train.txt' and 'test.txt' file in the folder '/List/'.
+
+The content structure of the text file is as follows
 ```
 train.txt
 │
