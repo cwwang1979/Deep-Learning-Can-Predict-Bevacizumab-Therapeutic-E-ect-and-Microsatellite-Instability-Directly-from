@@ -8,8 +8,8 @@
 
 #### Requirerements
 - ubuntu 18.04
-- RAM >= 16 GB
-- GPU Memory >= 10 GB
+- RAM >= 128 GB
+- GPU Memory >= 24 GB
 - GPU driver version >= 418.56
 - CUDA version >= 10.1
 - cuDNN version >= 7.6.4
@@ -22,29 +22,29 @@ Execution file, configuration file, and models are download from the [zip](https
 OvaryTreatment_AnginPKM2VEGF/
 │
 ├── Data/ - training and testing data location
-│   ├── invalid-PKM2_0/
-│   │   ├── 10_2.bmp
-│   │   ├── 10_3.bmp
-│   │   ├── 10_4.bmp
-│   │   │       ⋮
-│   │   └── 20_11.bmp
+│   ├── BB_tileout/
+│   │   ├── TCGA-04-1335-01A-01-BS1.svs/
+│   │   │   ├──10_2.bmp
+│   │   │   ├── 10_3.bmp
+│   │   │   ├── 10_4.bmp
+│   │   │   │       ⋮
+│   │   │   └── 20_11.bmp
+│   │   │
+│   │   └── TCGA-04-1342-01A-01-BS1.svs/
+│   │       ├──30_3.bmp
+│   │       ├──32_1.bmp
+│   │       ├──33_4.bmp
+│   │       │       ⋮
+│   │       └── 56_11.bmp          
 │   │
 │   │
-│   └── effective-PKM2_21/
-│       ├── 91_13.bmp
-│       ├── 91_14.bmp
-│       ├── 91_15.bmp
+│   └── WSI_Image/
+│       ├── TCGA-04-1335-01A-01-BS1.svs
+│       ├── TCGA-04-1342-01A-01-BS1.svs
+│       ├── TCGA-10-0928-01A-01-BS1.svs
 │       │       ⋮
-│       └── 100_22.bmp
+│       └── TCGA-61-1730-11A-01-TS1.svs
 │
-├── BB_Segmentation - extract the tumor tissue
-│   ├── AfterSeg_BB_tileout/ - storage location of tumor patches
-│   ├── BB_tileout/ - storage location of normal patches
-│   ├── model/ - model of the segmentation
-│   │   └── TMAIHC_All_i30w.caffemodel
-│   ├── deploy.prototxt
-│   ├── caffe_root.txt - set the caffe root
-│   └── Main_Segmentation - execution file
 │
 ├── List_Preprocessing/
 │   └── Main_List_Preprocessing - execution file
