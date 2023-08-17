@@ -61,7 +61,7 @@ TCGA_WSI_Ovary_Inv3/
     ├── Model/ - demo model
     │   └── Ovary_TCGA_MSI50%_weight_iter_1050000.caffemodel
     ├── deploy.prototxt
-    └── inference_TMA.py - execution file
+    └── inference.py - execution file
 
 ```
 
@@ -72,46 +72,77 @@ Put the Whole slide image in the Data/WSI_Image.
 
 Then in a terminal run:
 ```
-python TileScale.py
+./TileScale
 ```
 
-After running in a terminal, the result will be produced in two folders named "BB_tileout"
+After running in a terminal, the result will be produced in one folders named "BB_tileout", like above data struct.
 
 
-#### 2. BB_Segmentation
-Open the "caffe_root.txt" file to set up the root of caffe to use.
-
-Then in a terminal run:
+#### 2. List process
+make two list 'train.txt' and 'test.txt' file under the folder 'List/'
+The .txt file should be like
 ```
-./Main_Segmentation
+train.txt
+│
+├── TCGA-04-1335-01A-01-BS1.svs/38_50.bmp,1
+├── TCGA-04-1342-01A-01-BS1.svs/55_20.bmp,0
+├── TCGA-10-0928-01A-01-BS1.svs/58_30.bmp,1
+│        ⋮
+└── TCGA-61-1730-11A-01-TS1.svs/60_10.bmp,0
+
+test.txt
+│
+├── TCGA-12-1335-01A-01-BS1.svs/38_50.bmp,1
+├── TCGA-16-1342-01A-01-BS1.svs/55_20.bmp,0
+├── TCGA-30-0928-01A-01-BS1.svs/58_30.bmp,1
+│        ⋮
+└── TCGA-58-1730-11A-01-TS1.svs/60_10.bmp,0
+
 ```
-After running in a terminal, the image results will be produced in two folders named "AfterSeg_BB_tileout" and "BB_tileout"
 
-#### 3. List_Preprocessing
-Before doing "List_Preprocessing" execution file, the list of all patches needs to be produced first as shown in "TestingList_all.txt" and
-"TrainingList_all.txt"
+After dividing training set and testing set
 
-Then in a terminal run:
-```
-./Main_List_Preprocessing
-```
-
-After running in a terminal will produce two ".txt" files named  "TestingList_attentionScoring.txt" and "TrainingList_filter.txt"
-
-#### 4. Trainining
-Open the "solver.py" and "voc_layers.py" files to set up the storage location of training models and the location of training list("TrainingList_filter.txt") to use.
+#### 3. Trainining
+Open the "solver.py" and "voc_layers.py" files to set up the storage location of training models and the location of training list("train.txt") to use.
 
 Then in a terminal run:
 ```
 python solver.py
 ```
 
-#### 5. Testing
-Open the "inference_TMA.py" file to set up the storage location of training models and the location of testing list("TestingList_attentionScoring.txt") to use.
+#### 4. Patch Selection training part
+After done the training part use the 'Patch_selection' to choose the Model selection inference patch
 
 Then in a terminal run:
 ```
-python inference_TMA.py
+./Patch_selection train.txt
+```
+After running in a terminal, the .txt results will be produced under the folder '/List' and the filename will be PatchSelection_train.txt 
+
+#### 5. Model Selection
+Open the Model_selection.py file to set up the storage location of training models and the location of training list("PatchSelection_train.txt") to use.
+
+Then in a terminal run:
+```
+python Model_selection.py
+```
+After running in a terminal, the result will be display on the terminal window, record the model name and Copy it to the folder 'inference/Model'
+
+#### 6. Patch Selection testing part
+After done the training part use the 'Patch_selection' to choose the inference patch
+
+Then in a terminal run:
+```
+./Patch_selection test.txt
+```
+After running in a terminal, the .txt results will be produced under the folder '/List' and the filename will be PatchSelection_test.txt 
+
+#### 7. Testing
+Open the "inference.py" file to set up the storage location of training models and the location of testing list("PatchSelection_test.txt") to use.
+
+Then in a terminal run:
+```
+python inference.py
 ```
 
 ## License
