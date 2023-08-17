@@ -1,9 +1,5 @@
 # TCGA Ovary MSI High classification.
 
-## Associated Publications
-- Wang et al. (2023) Interpretable attention-based deep learning ensemble for personalized ovarian cancer treatment without manual annotations, Computerized Medical Imaging and Graphics, https://doi.org/10.1016/j.compmedimag.2023.102233 (IF=7.422, 14/136 RADIOLOGY, NUCLEAR MEDICINE & MEDICAL IMAGING)
-- Wang et al. (2023) Ensemble biomarkers for guiding anti‐angiogenesis therapy for ovarian cancer using deep learning, Clinical and Translational Medicine, 13(1), e1162, 1-7 (IF=8.554, 41/245 ONCOLOGY)
-
 ## Setup
 
 #### Requirerements
@@ -19,7 +15,7 @@ Execution file, configuration file, and models are download from the [zip](https
 
 #### File structure
 ```
-OvaryTreatment_AnginPKM2VEGF/
+TCGA_WSI_Ovary_Inv3/
 │
 ├── Data/ - training and testing data location
 │   ├── BB_tileout/
@@ -50,10 +46,8 @@ OvaryTreatment_AnginPKM2VEGF/
 │   └── Main_List_Preprocessing - execution file
 │
 ├── List/ - demo list
-│   ├── TestingList_all.txt
-│   ├── TestingList_attentionScoring.txt
-│   ├── TrainingList_all.txt
-│   └── TrainingList_filter.txt
+│   ├── train.txt
+│   └── test.txt
 │
 ├── Trainining/
 │   ├── Model - storage location of training models
