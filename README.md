@@ -67,16 +67,12 @@ TCGA_WSI_Ovary_Inv3/
 
 ## Steps
 
-#### 1. Detection_ROI
-Open the "caffe_root.txt" and "detected2.json" files to set up the root of caffe and the name of WSI to use.
-The file format of detected2.json is as follow:
+#### 1. Data preparing
+Put the Whole slide image in the Data/WSI_Image.
+
+Then in a terminal run:
 ```
-[
-    {
-        "Folder": "effective-PKM2.svs",
-        "Image": "effective-PKM2.svs"
-    }
-]
+python TileScale.py
 ```
 
 Then in a terminal run:
