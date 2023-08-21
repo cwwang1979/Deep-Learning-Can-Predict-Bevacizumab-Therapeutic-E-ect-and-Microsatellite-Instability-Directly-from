@@ -27,9 +27,9 @@ TCGA_WSI_Ovary_Inv3/
 │   │   │   └── 20_11.bmp
 │   │   │
 │   │   └── TCGA-04-1342-01A-01-BS1.svs/
-│   │       ├──30_3.bmp
-│   │       ├──32_1.bmp
-│   │       ├──33_4.bmp
+│   │       ├── 30_3.bmp
+│   │       ├── 32_1.bmp
+│   │       ├── 33_4.bmp
 │   │       │       ⋮
 │   │       └── 56_11.bmp          
 │   │
@@ -46,7 +46,7 @@ TCGA_WSI_Ovary_Inv3/
 │   │   └── TCGA-04-1335-01A-01-BS1.bmp
 │   │       ⋮
 │   └── TCGA-04-1342-01A-01-BS1.svs/
-│       └──TCGA-04-1342-01A-01-BS1.bmp        
+│       └── TCGA-04-1342-01A-01-BS1.bmp        
 │
 ├── List/ - demo list
 │   ├── train.txt
