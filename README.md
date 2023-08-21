@@ -127,8 +127,8 @@ python solver.py
 ```
 
 
-#### 4. Patch Selection training part
-After done the training part, use the 'Patch_selection' file to choose the model selection patch.
+#### 4. Patch Selection for training part
+After the training is completed, use the 'Patch_selection' file to select tiles for model selection.
 
 Then in a terminal run:
 ```
@@ -147,8 +147,8 @@ python Model_selection.py
 After running in a terminal, the result will be display on the terminal window, record the model name and Copy it to the folder 'inference/Model'.
 
 
-#### 6. Patch Selection testing part
-After done the training part use the 'Patch_selection' to choose the inference patch.
+#### 6. Patch Selection for inference
+Utilize the 'Patch_selection' file to choose the tiles for inference.
 
 Then in a terminal run:
 ```
