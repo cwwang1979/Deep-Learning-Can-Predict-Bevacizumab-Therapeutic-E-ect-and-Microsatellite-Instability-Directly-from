@@ -162,6 +162,7 @@ Then in a terminal run:
 After running in a terminal, the .txt results will be produced under the folder '/List' and the filename will be stain_area.txt. 
 
 Next, use the 'Preprocess' file to remove noise from the tiles.
+
 Then in a terminal run:
 ```
 ./Preprocess
