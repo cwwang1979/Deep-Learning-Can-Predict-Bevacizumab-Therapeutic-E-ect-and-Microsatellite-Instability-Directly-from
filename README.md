@@ -40,7 +40,11 @@ TCGA_WSI_Ovary_Inv3/
 │       ├── TCGA-10-0928-01A-01-BS1.svs
 │       │       ⋮
 │       └── TCGA-61-1730-11A-01-TS1.svs
-│
+├── Preprocessing/ - Location for storing preprocessed images
+│   ├── TCGA-04-1335-01A-01-BS1.svs/
+│   │   └── TCGA-04-1335-01A-01-BS1.bmp
+│   └── TCGA-04-1342-01A-01-BS1.svs/
+│       └──TCGA-04-1342-01A-01-BS1.bmp        
 │
 ├── List/ - demo list
 │   ├── train.txt
@@ -67,7 +71,7 @@ TCGA_WSI_Ovary_Inv3/
 
 ## Steps
 
-#### 1. Data preparing
+#### 1. Data preparation
 Place the Whole slide image in Data/WSI_Image/.
 
 Then in a terminal run:
@@ -147,17 +151,27 @@ python Model_selection.py
 After running in a terminal, the result will be display on the terminal window, record the model name and Copy it to the folder 'inference/Model'.
 
 
-#### 6. Patch Selection for inference
-Utilize the 'Patch_selection' file to choose the tiles for inference.
+#### 6. Data preprocessing
+Remove image noise using the 'Preprocess' file.
 
 Then in a terminal run:
 ```
-./Patch_selection test.txt
+./Preprocess
 ```
 After running in a terminal, the .txt results will be produced under the folder '/List' and the filename will be PatchSelection_test.txt. 
 
 
-#### 7. Testing
+#### 7. Patch Selection for inference
+Utilize the 'Patch_selection' file to choose the tiles for inference.
+
+Then in a terminal run:
+```
+./Patch_selection Preprocessed.txt
+```
+After running in a terminal, the .txt results will be produced under the folder '/List' and the filename will be PatchSelection_test.txt. 
+
+
+#### 8. Testing
 Open the "inference.py" file to set up the storage location of training models and the location of testing list("PatchSelection_test.txt") to use.
 
 Then in a terminal run:
