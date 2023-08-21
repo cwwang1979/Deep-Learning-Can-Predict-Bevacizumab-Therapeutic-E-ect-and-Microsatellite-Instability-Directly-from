@@ -133,7 +133,7 @@ python solver.py
 ```
 
 
-#### 4. Patch Selection for training part
+#### 4. Patch Selection for training
 After the training is completed, use the 'Patch_selection' file to select tiles for model selection.
 
 Then in a terminal run:
