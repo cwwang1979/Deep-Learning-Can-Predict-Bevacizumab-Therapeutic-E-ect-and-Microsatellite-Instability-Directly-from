@@ -11,7 +11,7 @@
 - cuDNN version >= 7.5.1
 
 #### Download
-Execution file, configuration file, and models are download from the [zip]([https://drive.google.com/file/d/1MqGr6y_EgdS5CscmfWFmABvFkE1UCwe6/view?usp=share_link](https://drive.google.com/file/d/1bOr9D7tfmh5JMphQNKM3zhNYHQVqvdA0/view?usp=sharing)) file.  (For reviewers, "..._cwlab" is the password to decompress the file.)
+Execution file, configuration file, and models are download from the [zip]([[https://drive.google.com/file/d/1MqGr6y_EgdS5CscmfWFmABvFkE1UCwe6/view?usp=share_link](https://drive.google.com/file/d/1bOr9D7tfmh5JMphQNKM3zhNYHQVqvdA0/view?usp=sharing)](https://drive.google.com/file/d/1T2tQGGSeKSjfLlqSxyoVPjQXvJ3kySg-/view?usp=sharing)) file.  (For reviewers, "..._cwlab" is the password to decompress the file.)
 
 #### File structure
 ```
