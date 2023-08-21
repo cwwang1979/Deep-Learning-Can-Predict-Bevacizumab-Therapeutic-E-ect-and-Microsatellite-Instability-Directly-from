@@ -153,13 +153,20 @@ After running in a terminal, the result will be display on the terminal window, 
 
 
 #### 6. Data preprocessing
-Remove image noise using the 'Preprocess' file.
+Utilize the 'locate' file to locate the coordinates of noise in the image.
 
+Then in a terminal run:
+```
+./locate
+```
+After running in a terminal, the .txt results will be produced under the folder '/List' and the filename will be stain_area.txt. 
+
+Next, use the 'Preprocess' file to remove noise from the tiles.
 Then in a terminal run:
 ```
 ./Preprocess
 ```
-After running in a terminal, the .txt results will be produced under the folder '/List' and the filename will be PatchSelection_test.txt. 
+After running in a terminal, the .txt results will be produced under the folder '/List' and the filename will be Preprocessed.txt. 
 
 
 #### 7. Patch Selection for inference
