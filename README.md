@@ -81,7 +81,7 @@ Then in a terminal run:
 ./TileScale
 ```
 
-After running in a terminal, the result will be produced in folder named "BB_tileout", like the following structure.
+After running in a terminal, the result will be produced in folder named 'Data/BB_tileout', like the following structure.
 ```
 BB_tileout/
 ├── TCGA-04-1335-01A-01-BS1.svs/
