@@ -44,6 +44,7 @@ TCGA_WSI_Ovary_Inv3/
 ├── Preprocessing/ - Location for storing preprocessed images
 │   ├── TCGA-04-1335-01A-01-BS1.svs/
 │   │   └── TCGA-04-1335-01A-01-BS1.bmp
+│   │       ⋮
 │   └── TCGA-04-1342-01A-01-BS1.svs/
 │       └──TCGA-04-1342-01A-01-BS1.bmp        
 │
