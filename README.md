@@ -153,7 +153,7 @@ python Model_selection.py
 After running in a terminal, the result will be display on the terminal window, record the model name and Copy it to the folder 'inference/Model'.
 
 
-#### 6. Data preprocessing
+#### 6. Data preprocessing for inference
 Utilize the 'locate' file to locate the coordinates of noise in the image.
 
 Then in a terminal run:
